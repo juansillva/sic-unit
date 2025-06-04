@@ -1,13 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="" href="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="" href="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/" />
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
     <title>Sistema de Incentivo a Cultura - SIC</title>
 </head>
+
 <body>
+    <header>
+        <div class="content-header">
+            <img src="./assets/sic_logo 1.svg" alt="" />
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Editais</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="container-buttons">
+            <button id="button-entrar">
+                Entrar
+            </button>
+            <button id="button-cadastrar">
+                Cadastre-se
+            </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cta-hero">
+            <h1>EDITAL ABERTO:</h1>
+            <h2>Cadastramento de <strong>Agremiações Culturais</strong></h2>
+            <p>
+                Valorize sua tradição! Cadastre sua agremiação e fortaleça o acesso às
+                políticas culturais do Recife.
+            </p>
+            <span id="prazo-inscricao">
+                <i class="bxr bx-calendar-alt" style="color: white;"></i>
+                <p>Inscrições até o dia 20 de maio</p>
+            </span>
+             
+                
+                <a id="button-ver-edital" style="color: white;" href=""><i class="bxr bx-file-detail"></i>Ver Edital</a>
     
-    
+        </div>
+    </main>
+
+   <section id="section-editais">
+        <li id="title-section">
+            <h2>EDITAIS E RESULTADOS</h2>
+            <p>Confira os editais abertos, fechados e resultados</p>
+        </li>
+        
+        <div class="container-editais">
+            <!-- Editais Abertos -->
+            <div id="abertos" class="box-edital">
+                <div id="title-box">
+                    <i class="bx bx-folder-open"></i>
+                    <h6>Editais Abertos</h6>
+                </div>
+                <div id="aberto" class="editais">
+                    <p><i class="bx bx-file-detail"></i> CADASTRAMENTO DE AGREMIAÇÕES</p>
+                </div>
+                <div id="aberto" class="editais">
+                    <p><i class="bx bx-file-detail"></i> CADASTRAMENTO DE AGREMIAÇÕES</p>
+                </div>
+                <div id="aberto" class="editais">
+                    <p><i class="bx bx-file-detail"></i> CADASTRAMENTO DE AGREMIAÇÕES</p>
+                </div>
+            </div>
+
+            <!-- Editais Fechados -->
+            <div id="fechados" class="box-edital">
+                <div id="title-box">
+                    <i class="bx bx-lock"></i>
+                    <h6>Editais Fechados</h6>
+                </div>
+                <div id="fechado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAL FESTIVAL DE DANÇA DO RECIFE 2025</p>
+                </div>
+                <div id="fechado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAL SÃO JOÃO 2025</p>
+                </div>
+                <div id="fechado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAL SUBVENÇÃO CICLO JUNINO</p>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div id="resultados" class="box-edital">
+                <div id="title-box">
+                    <i class="bx bx-folder-check"></i>
+                    <h6>Resultados</h6>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> RESULTADOS PRELIMINAR CICLO JUNINO 2025</p>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> RESULTADOS SUBVENÇÃO CICLO JUNINO 2025</p>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAIS DO SIC - 2024 (FIC E MIC) - HABILITADOS - 1ª FASE</p>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAIS DO SIC - 2024 (FIC E MIC) - HABILITADOS - 1ª FASE</p>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAIS DO SIC - 2024 (FIC E MIC) - HABILITADOS - 1ª FASE</p>
+                </div>
+                <div id="resultado" class="editais">
+                    <p><i class="bx bx-file-detail"></i> EDITAIS DO SIC - 2024 (FIC E MIC) - HABILITADOS - 1ª FASE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="contatos-section">
+        <div class="container">
+            <h2 class="section-title">Contatos Importantes</h2>
+            
+            <div class="contatos-grid">
+                <!-- Produtores e Artistas -->
+                <div class="contato-card">
+                    <div class="contato-header">
+                        <div class="contato-icon">🎭</div>
+                        <h3 class="contato-title">Produtores e Artistas</h3>
+                    </div>
+                    <div class="contato-info">
+                        <p><strong>Gerência de Contratações:</strong> (81) 3355-8034</p>
+                    </div>
+                </div>
+
+                <!-- Dúvidas sobre Editais -->
+                <div class="contato-card">
+                    <div class="contato-header">
+                        <div class="contato-icon">📋</div>
+                        <h3 class="contato-title">Dúvidas sobre inscrição nos editais</h3>
+                    </div>
+                    <div class="contato-info">
+                        <p><strong>Núcleo de Cultura Cidadã:</strong> (81) 3224-3660</p>
+                        <p><strong>WhatsApp:</strong> (81) 99321-1517</p>
+                    </div>
+                </div>
+
+                <!-- Suporte ao Sistema -->
+                <div class="contato-card">
+                    <div class="contato-header">
+                        <div class="contato-icon">💻</div>
+                        <h3 class="contato-title">Suporte ao Sistema</h3>
+                    </div>
+                    <div class="contato-info">
+                        <p><strong>Telefone:</strong> (81) 99334-7712</p>
+                    </div>
+                </div>
+
+                <!-- Gerência do SIC -->
+                <div class="contato-card">
+                    <div class="contato-header">
+                        <div class="contato-icon">🏛️</div>
+                        <h3 class="contato-title">Gerência do SIC</h3>
+                    </div>
+                    <div class="contato-info">
+                        <p><strong>Telefone:</strong> (81) 3355-8029</p>
+                    </div>
+                </div>
+
+                <!-- Horário de Atendimento -->
+                <div class="contato-card horario-card">
+                    <div class="contato-icon">🕘</div>
+                    <h3 class="horario-title">Horário de Atendimento: Segunda a sexta, das 9h às 16h</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo e Descrição -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./assets/sic_logo 1.svg" alt="Logo SIC">
+                        <p>Sistema de Incentivo à Cultura<br>
+                        Fomentando a arte e cultura no Recife</p>
+                    </div>
+                </div>
+
+                <!-- Navegação -->
+                <div class="footer-section">
+                    <h3>Navegação</h3>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#editais">Editais</a></li>
+                            <li><a href="#contatos">Contatos</a></li>
+                            <li><a href="#sobre">Sobre o SIC</a></li>
+                            <li><a href="#documentos">Documentos</a></li>
+                            <li><a href="#faq">Perguntas Frequentes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <p>Rua da Aurora, 463 - Boa Vista<br>Recife - PE, 50050-000</p>
+                        <p>(81) 3355-8000</p>
+                        <p>cultura@recife.pe.gov.br</p>
+                        <p>Segunda a Sexta: 8h às 17h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="prefeitura-logo">
+                    <div>
+                        <strong>Prefeitura da Cidade do Recife</strong>
+                        <small>Secretaria de Cultura</small>
+                    </div>
+                </div>
+                <p>&copy; 2025 Sistema de Incentivo à Cultura - SIC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

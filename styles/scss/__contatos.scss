@@ -1,0 +1,205 @@
+.contatos-section {
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.contatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contato-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contato-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contato-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contato-icon {
+  font-size: 20px;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.contato-info {
+  line-height: 1.6;
+}
+
+.contato-info p {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  opacity: 0.95;
+}
+
+.contato-info strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.horario-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.horario-card .contato-icon {
+  font-size: 1rem;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.horario-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.horario-info {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contato-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.contato-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.contato-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.contato-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.contato-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.horario-card {
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .contatos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contato-card {
+    padding: 20px;
+  }
+
+  .contato-title {
+    font-size: 1rem;
+  }
+
+  .contato-info p {
+    font-size: 0.9rem;
+  }
+
+  .horario-card {
+    padding: 25px;
+  }
+
+  .horario-title {
+    font-size: 1rem;
+  }
+
+  .horario-info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contatos-section {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .contato-header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .contato-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

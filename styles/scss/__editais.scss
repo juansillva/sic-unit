@@ -1,0 +1,262 @@
+#section-editais {
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#title-section {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+  list-style: none;
+}
+
+#title-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#title-section p {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.container-editais {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.box-edital {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.box-edital:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+#title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#title-box i {
+  font-size: 28px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title-box h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.editais {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.editais:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(10px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.editais:last-child {
+  margin-bottom: 0;
+}
+
+.editais p {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: white;
+  opacity: 0.95;
+}
+
+.editais i {
+  margin-right: 10px;
+  font-size: 16px;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+#abertos #title-box i {
+  color: #27ff6f;
+  background: rgba(39, 255, 111, 0.2);
+}
+
+#fechados #title-box i {
+  color: #f82626;
+  background: rgba(248, 38, 38, 0.2);
+}
+
+#resultados #title-box i {
+  color: #005fcc;
+  background: rgba(0, 95, 204, 0.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box-edital {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.box-edital:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.box-edital:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.box-edital:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.box-edital {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.box-edital::-webkit-scrollbar {
+  width: 6px;
+}
+
+.box-edital::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.box-edital::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.box-edital::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #title-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  #title-section p {
+    font-size: 1rem;
+  }
+
+  .container-editais {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .box-edital {
+    padding: 20px;
+  }
+
+  #title-box {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+
+  #title-box i {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #title-box h6 {
+    font-size: 1.2rem;
+  }
+
+  .editais {
+    padding: 12px;
+  }
+
+  .editais p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #section-editais {
+    padding: 40px 0;
+  }
+
+  #title-section h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  #title-section p {
+    font-size: 0.95rem;
+  }
+
+  .container-editais {
+    padding: 0 10px;
+  }
+
+  .box-edital {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  #title-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #title-box i {
+    margin-right: 0;
+  }
+
+  .editais:hover {
+    transform: translateX(5px);
+  }
+}

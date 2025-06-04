@@ -1,0 +1,258 @@
+.footer {
+  background-color: $black-100;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  height: fit-content;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #ea580c;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #ea580c;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ea580c;
+  font-weight: 500;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-top: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 12px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: #ea580c;
+  padding-left: 10px;
+}
+
+.footer-nav a::before {
+  content: "▶";
+  margin-right: 10px;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover::before {
+  opacity: 1;
+}
+
+.contact-info {
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.contact-info p::before {
+  content: "📍";
+  margin-right: 10px;
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.contact-info p:nth-child(2)::before {
+  content: "📞";
+}
+
+.contact-info p:nth-child(3)::before {
+  content: "✉️";
+}
+
+.contact-info p:nth-child(4)::before {
+  content: "🕒";
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.prefeitura-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.prefeitura-logo div {
+  text-align: center;
+}
+
+.prefeitura-logo strong {
+  font-size: 16px;
+  color: #ea580c;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.prefeitura-logo small {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  background: #ea580c;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.footer-bottom p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-content .footer-section:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-nav a {
+    justify-content: center;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .footer-content {
+    gap: 25px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+}
