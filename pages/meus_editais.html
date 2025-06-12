@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/__meu_editais.css">
+    <link rel="stylesheet" href="../styles/__sidebar.css">
+    <link rel="stylesheet" href="../styles/__header_sic.css">
+    <link rel="stylesheet" href="styles/__global.css">
+    <title>SIC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+</head>
+<body>
+
+      <header class="header">
+        <div class="header-content">
+            <img src="../assets/logo-sic.svg" class="logo" />
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/editais">Editais</a></li>
+                    <li><a href="/municipios">Municípios</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="search-container">
+                    <i class="bx bx-search search-icon"></i>
+                    <input type="search" class="search-input" placeholder="Buscar aqui no sistema...">
+                </div>
+                <span style="font-size: 12px; color: #666;">Juan</span>
+                <div class="user-profile">J</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="./painel.html" class="active">
+                        <i class='bx bx-home'></i>
+                        Painel
+                    </a>
+                </li>
+                <li>
+                    <a href="./meus_editais.html">
+                        <i class='bx bx-form'></i>
+                        Meus Editais
+                    </a>
+                </li>
+                <li>
+                    <a href="./inscricao.html">
+                        <i class='bx bx-edit-alt'></i>
+                        Nova Inscrição
+                    </a>
+                </li>
+                <li>
+                    <a href="/documentos">
+                        <i class='bx bx-folder'></i>
+                        Documentos
+                    </a>
+                </li>
+                <li>
+                    <a href="/avisos">
+                        <i class='bx bx-bell'></i>
+                        Avisos
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="/guias">
+                        <i class='bx bx-book-open'></i>
+                        Guias
+                    </a>
+                </li>
+                <li>
+                    <a href="/suporte">
+                        <i class='bx bx-support'></i>
+                        Suporte
+                    </a>
+                </li>
+                <li>
+                    <a href="/fale-conosco">
+                        <i class='bx bx-phone'></i>
+                        Fale Conosco
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="welcome-header">
+            <h1 class="welcome-title">Olá, Juan</h1>
+            <p class="welcome-subtitle">Explore as oportunidades culturais disponíveis e participe dos editais abertos!<br>
+            Clique em cada seção do menu para ter acesso à cultura de sua região.</p>
+        </div>
+        
+         <div class="container">
+        <div class="table-header">
+            <div>Nome do Edital</div>
+            <div>Categoria</div>
+            <div>Status</div>
+            <div>Prazo</div>
+            <div></div>
+        </div>
+
+        <div class="table-row">
+            <div class="edital-name" data-label="Nome do Edital">EDITAL SÃO JOÃO 2025</div>
+            <div class="categoria" data-label="Categoria">Cultura</div>
+            <div data-label="Status">
+                <span class="status aprovado">Aprovado</span>
+            </div>
+            <div class="prazo" data-label="Prazo">20/04/2025</div>
+            <div>
+                <button class="btn-ver-mais">Ver mais</button>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="edital-name" data-label="Nome do Edital">EDITAL FESTIVAL DE DANÇA DO RECIFE 2025</div>
+            <div class="categoria" data-label="Categoria">Dança</div>
+            <div data-label="Status">
+                <span class="status aprovado">Aprovado</span>
+            </div>
+            <div class="prazo" data-label="Prazo">12/04/2025</div>
+            <div>
+                <button class="btn-ver-mais">Ver mais</button>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="edital-name" data-label="Nome do Edital">CADASTRAMENTO DE AGREMIAÇÕES</div>
+            <div class="categoria" data-label="Categoria">Carnaval</div>
+            <div data-label="Status">
+                <span class="status em-analise">Em Análise</span>
+            </div>
+            <div class="prazo" data-label="Prazo">05/05/2025</div>
+            <div>
+                <button class="btn-ver-mais amarelo">Ver mais</button>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>

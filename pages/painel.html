@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+    <title>SIC</title>
+    <link rel="stylesheet" href="../styles/__painel.css" />
+     <link rel="stylesheet" href="../styles/__sidebar.css" />
+    <link rel="stylesheet" href="../styles/__header_sic.css" />
+    <link rel="stylesheet" href="styles/__global.css">
+  </head>
+  <body>
+ <header>
+       <header class="header">
+        <div class="header-content">
+            <img src="../assets/logo-sic.svg" class="logo" />
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/editais">Editais</a></li>
+                    <li><a href="/municipios">Municípios</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="search-container">
+                    <i class="bx bx-search search-icon"></i>
+                    <input type="search" class="search-input" placeholder="Buscar aqui no sistema...">
+                </div>
+                <span style="font-size: 12px; color: #666;">Juan</span>
+                <div class="user-profile">J</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="./painel.html" class="active">
+                        <i class='bx bx-home'></i>
+                        Painel
+                    </a>
+                </li>
+                <li>
+                    <a href="./meus_editais.html">
+                        <i class='bx bx-form'></i>
+                        Meus Editais
+                    </a>
+                </li>
+                <li>
+                    <a href="./inscricao.html">
+                        <i class='bx bx-edit-alt'></i>
+                        Nova Inscrição
+                    </a>
+                </li>
+                <li>
+                    <a href="/documentos">
+                        <i class='bx bx-folder'></i>
+                        Documentos
+                    </a>
+                </li>
+                <li>
+                    <a href="/avisos">
+                        <i class='bx bx-bell'></i>
+                        Avisos
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="/guias">
+                        <i class='bx bx-book-open'></i>
+                        Guias
+                    </a>
+                </li>
+                <li>
+                    <a href="/suporte">
+                        <i class='bx bx-support'></i>
+                        Suporte
+                    </a>
+                </li>
+                <li>
+                    <a href="/fale-conosco">
+                        <i class='bx bx-phone'></i>
+                        Fale Conosco
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="welcome-header">
+            <h1 class="welcome-title">Olá, Juan</h1>
+            <p class="welcome-subtitle">Explore as oportunidades culturais disponíveis e participe dos editais abertos!<br>
+            Clique em cada seção do menu para ter acesso à cultura de sua região.</p>
+        </div>
+
+        <!-- Painel do Participante -->
+        <div class="participant-panel">
+            <h2 class="panel-title">
+                <i class='bx bx-id-card'></i>
+                Painel do Participante
+            </h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Total de Editais Inscritos</div>
+                    <div class="stat-sublabel">Ver todos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Em Análise</div>
+                    <div class="stat-sublabel">Ver todos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Projetos Aprovados</div>
+                    <div class="stat-sublabel">Ver todos</div>
+                </div>
+            </div>
+
+            <div class="status-grid">
+                <div class="status-item">
+                    <div class="status-title">Documentos Pendentes</div>
+                    <div class="status-number">2</div>
+                    <div class="status-description">Aguardando complemento de documentação<br>
+                    Status: Aguardando</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-title">Avisos</div>
+                    <div class="status-number">1</div>
+                    <div class="status-description">Você tem documentos para finalizar<br>
+                    Ver mensagem</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editais e Resultados -->
+        <div class="editais-section">
+            <h2 class="section-title">Editais e Resultados</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 20px;">Confira editais abertos, ou clique sobre eles para visualizar.</p>
+
+            <div class="editais-tabs">
+                <div class="tab-section">
+                    <div class="tab-header">
+                        <i class='bx bx-check-circle'></i>
+                        Editais Abertos
+                    </div>
+                    <div class="tab-content">
+                        <div style="color: #666; font-size: 12px; margin-bottom: 10px;">Escolha o edital desejado para se inscrever e participar!</div>
+                        <button class="open-inscription">INSCREVA-SE AGORA!</button>
+                    </div>
+                </div>
+
+                <div class="tab-section">
+                    <div class="tab-header fechados">
+                        <i class='bx bx-lock-alt'></i>
+                        Editais Fechados
+                    </div>
+                    <div class="tab-content fechados">
+                        <div class="edital-item">🏆 EDITAL FESTIVAL DE DANÇA DO RECIFE 2015</div>
+                        <div class="edital-item">🏆 EDITAL SAO JOAO 2016</div>
+                        <div class="edital-item">🏆 EDITAL SUBSIDIO DO OURO JUNIOR</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div class="resultados-section">
+                <div class="resultados-header">
+                    <i class='bx bx-file-find' style="color: #005fcc;"></i>
+                    <span class="resultados-title">Resultados</span>
+                    <span style="color: #666; font-size: 12px; margin-left: 10px;">Confira os resultados dos editais</span>
+                </div>
+
+                <ul class="resultados-list">
+                    <li class="resultado-item">🏆 RESULTADO PRELIMINAR CIRCO JUNTO 2021</li>
+                    <li class="resultado-item">🏆 EDITAL DANCE INTERMEDIÁRIO PJ JUNIOR 2019</li>
+                    <li class="resultado-item">🏆 EDITAL DO ISI - 2018 PRÊMIO E INCL - GANHA PARCERIA - 1° FASE</li>
+                    <li class="resultado-item">🏆 EDITAL DO ISI - 2018 PRÊMIO E INCL - GANHA PARCERIA - 1° FASE</li>
+                    <li class="resultado-item">🏆 EDITAL DO ISI - 2018 PRÊMIO E INCL - GANHA PARCERIA - 1° FASE</li>
+                    <li class="resultado-item">🏆 EDITAL DO ISI - 2018 PRÊMIO E INCL - GANHA PARCERIA - 1° FASE</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+  </body>
+</html>
